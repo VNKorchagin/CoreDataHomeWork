@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		551818531E672E4E001B7CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 551818521E672E4E001B7CC7 /* main.m */; };
+		551818561E672E4E001B7CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 551818551E672E4E001B7CC7 /* AppDelegate.m */; };
+		5518185C1E672E4E001B7CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5518185A1E672E4E001B7CC7 /* Main.storyboard */; };
+		5518185F1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5518185D1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodeld */; };
+		551818611E672E4F001B7CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551818601E672E4F001B7CC7 /* Assets.xcassets */; };
+		551818641E672E4F001B7CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551818621E672E4F001B7CC7 /* LaunchScreen.storyboard */; };
+		551818701E672FBD001B7CC7 /* SKStudentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5518186F1E672FBD001B7CC7 /* SKStudentInfoViewController.m */; };
+		551818731E67306F001B7CC7 /* SKStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 551818721E67306F001B7CC7 /* SKStudent.m */; };
+		551818761E673879001B7CC7 /* SKUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 551818751E673879001B7CC7 /* SKUserCell.m */; };
+		5518187A1E674A2F001B7CC7 /* SKStudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 551818791E674A2F001B7CC7 /* SKStudentInfoCell.m */; };
+		5518187D1E67784A001B7CC7 /* SKStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5518187C1E67784A001B7CC7 /* SKStudentsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5518184E1E672E4E001B7CC7 /* CoreDataHomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataHomeWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		551818521E672E4E001B7CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		551818541E672E4E001B7CC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		551818551E672E4E001B7CC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5518185B1E672E4E001B7CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5518185E1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataHomeWork.xcdatamodel; sourceTree = "<group>"; };
+		551818601E672E4F001B7CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		551818631E672E4F001B7CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		551818651E672E4F001B7CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5518186E1E672FBD001B7CC7 /* SKStudentInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStudentInfoViewController.h; sourceTree = "<group>"; };
+		5518186F1E672FBD001B7CC7 /* SKStudentInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStudentInfoViewController.m; sourceTree = "<group>"; };
+		551818711E67306F001B7CC7 /* SKStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStudent.h; sourceTree = "<group>"; };
+		551818721E67306F001B7CC7 /* SKStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStudent.m; sourceTree = "<group>"; };
+		551818741E673879001B7CC7 /* SKUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKUserCell.h; sourceTree = "<group>"; };
+		551818751E673879001B7CC7 /* SKUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUserCell.m; sourceTree = "<group>"; };
+		551818781E674A2F001B7CC7 /* SKStudentInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStudentInfoCell.h; sourceTree = "<group>"; };
+		551818791E674A2F001B7CC7 /* SKStudentInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStudentInfoCell.m; sourceTree = "<group>"; };
+		5518187B1E67784A001B7CC7 /* SKStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKStudentsViewController.h; sourceTree = "<group>"; };
+		5518187C1E67784A001B7CC7 /* SKStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStudentsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5518184B1E672E4D001B7CC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		551818451E672E4D001B7CC7 = {
+			isa = PBXGroup;
+			children = (
+				551818501E672E4E001B7CC7 /* CoreDataHomeWork */,
+				5518184F1E672E4E001B7CC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5518184F1E672E4E001B7CC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5518184E1E672E4E001B7CC7 /* CoreDataHomeWork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		551818501E672E4E001B7CC7 /* CoreDataHomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				551818771E673882001B7CC7 /* Cells */,
+				5518187B1E67784A001B7CC7 /* SKStudentsViewController.h */,
+				5518187C1E67784A001B7CC7 /* SKStudentsViewController.m */,
+				5518186E1E672FBD001B7CC7 /* SKStudentInfoViewController.h */,
+				5518186F1E672FBD001B7CC7 /* SKStudentInfoViewController.m */,
+				551818541E672E4E001B7CC7 /* AppDelegate.h */,
+				551818711E67306F001B7CC7 /* SKStudent.h */,
+				551818721E67306F001B7CC7 /* SKStudent.m */,
+				551818551E672E4E001B7CC7 /* AppDelegate.m */,
+				5518185A1E672E4E001B7CC7 /* Main.storyboard */,
+				551818601E672E4F001B7CC7 /* Assets.xcassets */,
+				551818621E672E4F001B7CC7 /* LaunchScreen.storyboard */,
+				551818651E672E4F001B7CC7 /* Info.plist */,
+				5518185D1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodeld */,
+				551818511E672E4E001B7CC7 /* Supporting Files */,
+			);
+			path = CoreDataHomeWork;
+			sourceTree = "<group>";
+		};
+		551818511E672E4E001B7CC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				551818521E672E4E001B7CC7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		551818771E673882001B7CC7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				551818781E674A2F001B7CC7 /* SKStudentInfoCell.h */,
+				551818791E674A2F001B7CC7 /* SKStudentInfoCell.m */,
+				551818741E673879001B7CC7 /* SKUserCell.h */,
+				551818751E673879001B7CC7 /* SKUserCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5518184D1E672E4D001B7CC7 /* CoreDataHomeWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 551818681E672E4F001B7CC7 /* Build configuration list for PBXNativeTarget "CoreDataHomeWork" */;
+			buildPhases = (
+				5518184A1E672E4D001B7CC7 /* Sources */,
+				5518184B1E672E4D001B7CC7 /* Frameworks */,
+				5518184C1E672E4D001B7CC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataHomeWork;
+			productName = CoreDataHomeWork;
+			productReference = 5518184E1E672E4E001B7CC7 /* CoreDataHomeWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		551818461E672E4D001B7CC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SK;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Кирилл";
+				TargetAttributes = {
+					5518184D1E672E4D001B7CC7 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 551818491E672E4D001B7CC7 /* Build configuration list for PBXProject "CoreDataHomeWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 551818451E672E4D001B7CC7;
+			productRefGroup = 5518184F1E672E4E001B7CC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5518184D1E672E4D001B7CC7 /* CoreDataHomeWork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5518184C1E672E4D001B7CC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551818641E672E4F001B7CC7 /* LaunchScreen.storyboard in Resources */,
+				551818611E672E4F001B7CC7 /* Assets.xcassets in Resources */,
+				5518185C1E672E4E001B7CC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5518184A1E672E4D001B7CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5518187D1E67784A001B7CC7 /* SKStudentsViewController.m in Sources */,
+				551818701E672FBD001B7CC7 /* SKStudentInfoViewController.m in Sources */,
+				551818761E673879001B7CC7 /* SKUserCell.m in Sources */,
+				5518185F1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodeld in Sources */,
+				551818731E67306F001B7CC7 /* SKStudent.m in Sources */,
+				551818561E672E4E001B7CC7 /* AppDelegate.m in Sources */,
+				551818531E672E4E001B7CC7 /* main.m in Sources */,
+				5518187A1E674A2F001B7CC7 /* SKStudentInfoCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5518185A1E672E4E001B7CC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5518185B1E672E4E001B7CC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		551818621E672E4F001B7CC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551818631E672E4F001B7CC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		551818661E672E4F001B7CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		551818671E672E4F001B7CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		551818691E672E4F001B7CC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreDataHomeWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SK.CoreDataHomeWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5518186A1E672E4F001B7CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoreDataHomeWork/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SK.CoreDataHomeWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		551818491E672E4D001B7CC7 /* Build configuration list for PBXProject "CoreDataHomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551818661E672E4F001B7CC7 /* Debug */,
+				551818671E672E4F001B7CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		551818681E672E4F001B7CC7 /* Build configuration list for PBXNativeTarget "CoreDataHomeWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				551818691E672E4F001B7CC7 /* Debug */,
+				5518186A1E672E4F001B7CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5518185D1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5518185E1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodel */,
+			);
+			currentVersion = 5518185E1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodel */;
+			path = CoreDataHomeWork.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 551818461E672E4D001B7CC7 /* Project object */;
+}

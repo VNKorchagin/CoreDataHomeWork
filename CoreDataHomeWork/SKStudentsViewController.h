@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKCoreDataViewController.h"
 
 @class SKStudent;
 
-@interface SKStudentsViewController : UITableViewController
-
-@property (strong, nonatomic) NSMutableArray<SKStudent *> *studentsArray;
+@interface SKStudentsViewController : SKCoreDataViewController
 
 @end

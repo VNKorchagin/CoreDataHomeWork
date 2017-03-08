@@ -7,6 +7,7 @@
 //
 
 #import "SKStudentInfoViewController.h"
+#import "SKStudent+CoreDataClass.h"
 
 @interface SKStudentInfoViewController ()
 
@@ -87,51 +88,6 @@ static NSString *emailCell = @"emailCell";
     
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 #pragma mark - Actions
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
@@ -140,13 +96,23 @@ static NSString *emailCell = @"emailCell";
 
 - (IBAction)doneAction:(UIBarButtonItem *)sender {
     
-    SKStudent *newStudent = [[SKStudent alloc] init];
+    NSManagedObjectContext *context = [self.studentViewController.fetchedResultsController managedObjectContext];
+    SKStudent *student = [[SKStudent alloc] initWithContext:context];
     
-    newStudent.name = self.nameCell.nameTextField.text;
-    newStudent.lastname = self.lastnameCell.lastnameTextField.text;
-    newStudent.email = self.emailCell.emailTextField.text;
+    // If appropriate, configure the new managed object.
+
+    student.name = self.nameCell.nameTextField.text;
+    student.lastname = self.lastnameCell.lastnameTextField.text;
+    student.email = self.emailCell.emailTextField.text;
     
-    [self.studentViewController.studentsArray addObject:newStudent];
+    // Save the context.
+    NSError *error = nil;
+    if (![context save:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        
+        abort();
+    }
     
     [self.navigationController popViewControllerAnimated:YES];
 }

@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SKStudentsViewController.h"
 #import "SKStudentInfoCell.h"
-#import "SKStudent.h"
 
 @interface SKStudentInfoViewController : UITableViewController
 

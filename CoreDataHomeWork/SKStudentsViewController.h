@@ -13,4 +13,6 @@
 
 @interface SKStudentsViewController : SKCoreDataViewController
 
+@property (strong, nonatomic) NSIndexPath *indexPathForEdit;
+
 @end

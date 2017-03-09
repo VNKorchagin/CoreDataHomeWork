@@ -11,6 +11,8 @@
 
 @interface SKStudentInfoViewController ()
 
+@property (strong, nonatomic) SKStudent *student;
+
 @end
 
 typedef enum {
@@ -30,12 +32,14 @@ static NSString *emailCell = @"emailCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    if (self.isEdit) {
+        
+        SKStudentsViewController *vc = self.studentViewController;
+        
+        self.student = [vc.fetchedResultsController objectAtIndexPath:vc.indexPathForEdit];
+    }
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +66,10 @@ static NSString *emailCell = @"emailCell";
         case SKNameRow:
             cell = [tableView dequeueReusableCellWithIdentifier:nameCell
                                                    forIndexPath:indexPath];
+            if (self.isEdit) {
+                cell.nameTextField.text = self.student.name;
+            }
+            
             self.nameCell = cell;
             
             return cell;
@@ -69,6 +77,9 @@ static NSString *emailCell = @"emailCell";
         case SKLastnameRow:
             cell = [tableView dequeueReusableCellWithIdentifier:lastnameCell
                                                    forIndexPath:indexPath];
+            if (self.isEdit) {
+                cell.lastnameTextField.text = self.student.lastname;
+            }
             
             self.lastnameCell = cell;
             
@@ -77,6 +88,9 @@ static NSString *emailCell = @"emailCell";
         case SKEmailRow:
             cell = [tableView dequeueReusableCellWithIdentifier:emailCell
                                                    forIndexPath:indexPath];
+            if (self.isEdit) {
+                cell.emailTextField.text = self.student.email;
+            }
             
             self.emailCell = cell;
 
@@ -97,20 +111,26 @@ static NSString *emailCell = @"emailCell";
 - (IBAction)doneAction:(UIBarButtonItem *)sender {
     
     NSManagedObjectContext *context = [self.studentViewController.fetchedResultsController managedObjectContext];
-    SKStudent *student = [[SKStudent alloc] initWithContext:context];
     
-    // If appropriate, configure the new managed object.
+    if (!self.isEdit) {
+        
+        SKStudent *student = [[SKStudent alloc] initWithContext:context];
 
-    student.name = self.nameCell.nameTextField.text;
-    student.lastname = self.lastnameCell.lastnameTextField.text;
-    student.email = self.emailCell.emailTextField.text;
+        student.name = self.nameCell.nameTextField.text;
+        student.lastname = self.lastnameCell.lastnameTextField.text;
+        student.email = self.emailCell.emailTextField.text;
+        
+    } else {
+        
+        self.student.name = self.nameCell.nameTextField.text;
+        self.student.lastname = self.lastnameCell.lastnameTextField.text;
+        self.student.email = self.emailCell.emailTextField.text;
+        
+    }
     
     // Save the context.
     NSError *error = nil;
     if (![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        
         abort();
     }
     

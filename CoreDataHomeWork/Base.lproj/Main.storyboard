@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dfW-gO-gZv" id="ecs-YD-Tdr">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -82,6 +82,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="amY-ni-j36" kind="show" identifier="editStudent" id="R4q-4M-h6J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XW-h0-1YL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -250,5 +253,8 @@
         <image name="courses" width="32" height="32"/>
         <image name="students" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R4q-4M-h6J"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

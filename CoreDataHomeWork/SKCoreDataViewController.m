@@ -41,23 +41,6 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *studentsIdentifer = @"students";
-    
-    if ([tableView.restorationIdentifier isEqualToString:studentsIdentifer]) {
-        
-        SKUserCell *cell = [tableView dequeueReusableCellWithIdentifier:@"userCell"];
-        
-        [self configureCell:cell atIndexPath:indexPath];
-        
-        return cell;
-    }
-    
-    return nil;
-}
-
-
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
@@ -82,7 +65,6 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
 }
-
 
 #pragma mark - Fetched results controller
 

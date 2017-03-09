@@ -17,7 +17,7 @@
 @property (weak, nonatomic) SKStudentInfoCell *nameCell;
 @property (weak, nonatomic) SKStudentInfoCell *lastnameCell;
 @property (weak, nonatomic) SKStudentInfoCell *emailCell;
-
+@property (assign, nonatomic) BOOL isEdit;
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender;
 - (IBAction)doneAction:(UIBarButtonItem *)sender;

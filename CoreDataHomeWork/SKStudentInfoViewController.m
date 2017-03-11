@@ -27,7 +27,6 @@ static NSString *nameCell = @"nameCell";
 static NSString *lastnameCell = @"lastnameCell";
 static NSString *emailCell = @"emailCell";
 
-
 @implementation SKStudentInfoViewController
 
 - (void)viewDidLoad {

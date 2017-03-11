@@ -2,7 +2,7 @@
 //  SKStudent+CoreDataProperties.m
 //  CoreDataHomeWork
 //
-//  Created by Кирилл on 08.03.17.
+//  Created by Кирилл on 09.03.17.
 //  Copyright © 2017 Кирилл. All rights reserved.
 //
 
@@ -14,8 +14,9 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"SKStudent"];
 }
 
-@dynamic name;
-@dynamic lastname;
 @dynamic email;
+@dynamic lastname;
+@dynamic name;
+@dynamic courses;
 
 @end

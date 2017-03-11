@@ -1,24 +1,24 @@
 //
-//  SKStudentsViewController.m
+//  SKCoursesViewController.m
 //  CoreDataHomeWork
 //
-//  Created by Кирилл on 01.03.17.
+//  Created by Кирилл on 10.03.17.
 //  Copyright © 2017 Кирилл. All rights reserved.
 //
 
-#import "SKStudentsViewController.h"
-#import "SKStudentInfoViewController.h"
-#import "SKStudent+CoreDataClass.h"
-#import "SKUserCell.h"
+#import "SKCoursesViewController.h"
+#import "SKCoursesInfoViewController.h"
+#import "SKCourse+CoreDataClass.h"
+#import "SKCourseCell.h"
 
-@interface SKStudentsViewController ()
+@interface SKCoursesViewController ()
 
 @end
 
-static NSString *newStudentIdentifier = @"addNewStudent";
-static NSString *editStudentIdentifier = @"editStudent";
+static NSString *newCourseIdentifier = @"addNewCourse";
+static NSString *editCourseIdentifier = @"editCourse";
 
-@implementation SKStudentsViewController
+@implementation SKCoursesViewController
 
 @synthesize fetchedResultsController = _fetchedResultsController;
 
@@ -41,7 +41,7 @@ static NSString *editStudentIdentifier = @"editStudent";
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"SKStudent"
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"SKCourse"
                                               inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     
@@ -50,9 +50,8 @@ static NSString *editStudentIdentifier = @"editStudent";
     
     // Set sort descriptors
     NSSortDescriptor *nameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-    NSSortDescriptor *lastnameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"lastname" ascending:YES];
     
-    [fetchRequest setSortDescriptors:@[ nameDescriptor, lastnameDescriptor ]];
+    [fetchRequest setSortDescriptors:@[nameDescriptor]];
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
@@ -78,11 +77,11 @@ static NSString *editStudentIdentifier = @"editStudent";
 
 #pragma mark - Table view data source
 
-- (void)configureCell:(SKUserCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(SKCourseCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     
-    SKStudent *student = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    SKCourse *course = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", student.name, student.lastname];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", course.name];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -91,15 +90,15 @@ static NSString *editStudentIdentifier = @"editStudent";
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self performSegueWithIdentifier:editStudentIdentifier sender:nil];
+    [self performSegueWithIdentifier:editCourseIdentifier sender:nil];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    SKUserCell *cell = [tableView dequeueReusableCellWithIdentifier:@"userCell"];
-        
+    SKCourseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"courseCell"];
+    
     [self configureCell:cell atIndexPath:indexPath];
-        
+    
     return cell;
 }
 
@@ -107,21 +106,20 @@ static NSString *editStudentIdentifier = @"editStudent";
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.identifier isEqualToString:newStudentIdentifier]) {
-    
-        SKStudentInfoViewController *vc = [segue destinationViewController];
-    
-        vc.studentViewController = self;
+    if ([segue.identifier isEqualToString:newCourseIdentifier]) {
         
+        SKCoursesInfoViewController *vc = [segue destinationViewController];
+        
+        vc.coursesViewController = self;
         vc.isEdit = NO;
     }
     
-    if ([segue.identifier isEqualToString:editStudentIdentifier]) {
+    if ([segue.identifier isEqualToString:editCourseIdentifier]) {
         
-        SKStudentInfoViewController *vc = [segue destinationViewController];
+        SKCoursesInfoViewController *vc = [segue destinationViewController];
         
-        vc.studentViewController = self;
-        vc.title = @"Edit student";
+        vc.coursesViewController = self;
+        vc.title = @"Edit course";
         vc.isEdit = YES;
     }
 }

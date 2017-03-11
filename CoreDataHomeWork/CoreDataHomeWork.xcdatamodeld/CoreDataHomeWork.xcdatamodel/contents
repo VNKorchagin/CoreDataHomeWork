@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="SKCourse" representedClassName="SKCourse" parentEntity="SKObject" syncable="YES">
+        <attribute name="discipline" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sphere" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SKStudent" inverseName="courses" inverseEntity="SKStudent" syncable="YES"/>
+    </entity>
     <entity name="SKObject" representedClassName="SKObject" isAbstract="YES" syncable="YES"/>
     <entity name="SKStudent" representedClassName="SKStudent" parentEntity="SKObject" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="courses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SKCourse" inverseName="students" inverseEntity="SKCourse" syncable="YES"/>
     </entity>
     <elements>
-        <element name="SKStudent" positionX="-54" positionY="396" width="128" height="88"/>
-        <element name="SKObject" positionX="-119" positionY="299" width="128" height="43"/>
+        <element name="SKObject" positionX="-119" positionY="270" width="128" height="45"/>
+        <element name="SKStudent" positionX="-2" positionY="383" width="128" height="103"/>
+        <element name="SKCourse" positionX="-243" positionY="383" width="128" height="103"/>
     </elements>
 </model>

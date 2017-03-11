@@ -18,9 +18,17 @@
 		5518187A1E674A2F001B7CC7 /* SKStudentInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 551818791E674A2F001B7CC7 /* SKStudentInfoCell.m */; };
 		5518187D1E67784A001B7CC7 /* SKStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5518187C1E67784A001B7CC7 /* SKStudentsViewController.m */; };
 		552EF75E1E6C7E48007CE1E5 /* SKDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 552EF75D1E6C7E48007CE1E5 /* SKDataManager.m */; };
+		558B6D341E71F93700705882 /* SKCourse+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D301E71F93700705882 /* SKCourse+CoreDataClass.m */; };
+		558B6D351E71F93700705882 /* SKCourse+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D321E71F93700705882 /* SKCourse+CoreDataProperties.m */; };
+		558B6D3A1E71F9A600705882 /* SKStudent+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D371E71F9A600705882 /* SKStudent+CoreDataClass.m */; };
+		558B6D3B1E71F9A600705882 /* SKStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D391E71F9A600705882 /* SKStudent+CoreDataProperties.m */; };
+		558B6D3E1E71FA8900705882 /* SKCoursesInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D3D1E71FA8900705882 /* SKCoursesInfoViewController.m */; };
+		558B6D411E71FAB200705882 /* SKCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D401E71FAB200705882 /* SKCoursesViewController.m */; };
+		558B6D451E71FBF300705882 /* SKCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D441E71FBF300705882 /* SKCourseCell.m */; };
+		558B6D481E740C2100705882 /* SKCourseInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D471E740C2100705882 /* SKCourseInfoCell.m */; };
+		558B6D4D1E7418E600705882 /* SKCourseSphereCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D4C1E7418E600705882 /* SKCourseSphereCell.m */; };
+		558B6D531E741A5A00705882 /* SKSpheresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 558B6D521E741A5A00705882 /* SKSpheresViewController.m */; };
 		55F0BE6D1E70915000174BD2 /* SKCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0BE6C1E70915000174BD2 /* SKCoreDataViewController.m */; };
-		55F0BE8A1E709C6000174BD2 /* SKStudent+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0BE871E709C6000174BD2 /* SKStudent+CoreDataClass.m */; };
-		55F0BE8B1E709C6000174BD2 /* SKStudent+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0BE891E709C6000174BD2 /* SKStudent+CoreDataProperties.m */; };
 		55F0BE901E709C9600174BD2 /* SKObject+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0BE8D1E709C9600174BD2 /* SKObject+CoreDataClass.m */; };
 		55F0BE911E709C9600174BD2 /* SKObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F0BE8F1E709C9600174BD2 /* SKObject+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
@@ -45,12 +53,28 @@
 		5518187C1E67784A001B7CC7 /* SKStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKStudentsViewController.m; sourceTree = "<group>"; };
 		552EF75C1E6C7E48007CE1E5 /* SKDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDataManager.h; sourceTree = "<group>"; };
 		552EF75D1E6C7E48007CE1E5 /* SKDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDataManager.m; sourceTree = "<group>"; };
+		558B6D2F1E71F93700705882 /* SKCourse+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKCourse+CoreDataClass.h"; path = "CoreDataHomeWork/SKCourse+CoreDataClass.h"; sourceTree = "<group>"; };
+		558B6D301E71F93700705882 /* SKCourse+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKCourse+CoreDataClass.m"; path = "CoreDataHomeWork/SKCourse+CoreDataClass.m"; sourceTree = "<group>"; };
+		558B6D311E71F93700705882 /* SKCourse+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKCourse+CoreDataProperties.h"; path = "CoreDataHomeWork/SKCourse+CoreDataProperties.h"; sourceTree = "<group>"; };
+		558B6D321E71F93700705882 /* SKCourse+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKCourse+CoreDataProperties.m"; path = "CoreDataHomeWork/SKCourse+CoreDataProperties.m"; sourceTree = "<group>"; };
+		558B6D361E71F9A600705882 /* SKStudent+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKStudent+CoreDataClass.h"; path = "CoreDataHomeWork/SKStudent+CoreDataClass.h"; sourceTree = "<group>"; };
+		558B6D371E71F9A600705882 /* SKStudent+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKStudent+CoreDataClass.m"; path = "CoreDataHomeWork/SKStudent+CoreDataClass.m"; sourceTree = "<group>"; };
+		558B6D381E71F9A600705882 /* SKStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKStudent+CoreDataProperties.h"; path = "CoreDataHomeWork/SKStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
+		558B6D391E71F9A600705882 /* SKStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKStudent+CoreDataProperties.m"; path = "CoreDataHomeWork/SKStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
+		558B6D3C1E71FA8900705882 /* SKCoursesInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCoursesInfoViewController.h; sourceTree = "<group>"; };
+		558B6D3D1E71FA8900705882 /* SKCoursesInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCoursesInfoViewController.m; sourceTree = "<group>"; };
+		558B6D3F1E71FAB200705882 /* SKCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCoursesViewController.h; sourceTree = "<group>"; };
+		558B6D401E71FAB200705882 /* SKCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCoursesViewController.m; sourceTree = "<group>"; };
+		558B6D431E71FBF300705882 /* SKCourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCourseCell.h; sourceTree = "<group>"; };
+		558B6D441E71FBF300705882 /* SKCourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCourseCell.m; sourceTree = "<group>"; };
+		558B6D461E740C2100705882 /* SKCourseInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCourseInfoCell.h; sourceTree = "<group>"; };
+		558B6D471E740C2100705882 /* SKCourseInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCourseInfoCell.m; sourceTree = "<group>"; };
+		558B6D4B1E7418E600705882 /* SKCourseSphereCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCourseSphereCell.h; sourceTree = "<group>"; };
+		558B6D4C1E7418E600705882 /* SKCourseSphereCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCourseSphereCell.m; sourceTree = "<group>"; };
+		558B6D511E741A5A00705882 /* SKSpheresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSpheresViewController.h; sourceTree = "<group>"; };
+		558B6D521E741A5A00705882 /* SKSpheresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSpheresViewController.m; sourceTree = "<group>"; };
 		55F0BE6B1E70915000174BD2 /* SKCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKCoreDataViewController.h; sourceTree = "<group>"; };
 		55F0BE6C1E70915000174BD2 /* SKCoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKCoreDataViewController.m; sourceTree = "<group>"; };
-		55F0BE861E709C6000174BD2 /* SKStudent+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKStudent+CoreDataClass.h"; path = "CoreDataHomeWork/SKStudent+CoreDataClass.h"; sourceTree = "<group>"; };
-		55F0BE871E709C6000174BD2 /* SKStudent+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKStudent+CoreDataClass.m"; path = "CoreDataHomeWork/SKStudent+CoreDataClass.m"; sourceTree = "<group>"; };
-		55F0BE881E709C6000174BD2 /* SKStudent+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKStudent+CoreDataProperties.h"; path = "CoreDataHomeWork/SKStudent+CoreDataProperties.h"; sourceTree = "<group>"; };
-		55F0BE891E709C6000174BD2 /* SKStudent+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKStudent+CoreDataProperties.m"; path = "CoreDataHomeWork/SKStudent+CoreDataProperties.m"; sourceTree = "<group>"; };
 		55F0BE8C1E709C9600174BD2 /* SKObject+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKObject+CoreDataClass.h"; path = "CoreDataHomeWork/SKObject+CoreDataClass.h"; sourceTree = "<group>"; };
 		55F0BE8D1E709C9600174BD2 /* SKObject+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SKObject+CoreDataClass.m"; path = "CoreDataHomeWork/SKObject+CoreDataClass.m"; sourceTree = "<group>"; };
 		55F0BE8E1E709C9600174BD2 /* SKObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SKObject+CoreDataProperties.h"; path = "CoreDataHomeWork/SKObject+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -71,6 +95,7 @@
 		551818451E672E4D001B7CC7 = {
 			isa = PBXGroup;
 			children = (
+				558B6D4A1E7414E300705882 /* Core Data */,
 				55F0BE921E70A9F700174BD2 /* Models */,
 				551818501E672E4E001B7CC7 /* CoreDataHomeWork */,
 				5518184F1E672E4E001B7CC7 /* Products */,
@@ -88,15 +113,11 @@
 		551818501E672E4E001B7CC7 /* CoreDataHomeWork */ = {
 			isa = PBXGroup;
 			children = (
-				551818771E673882001B7CC7 /* Cells */,
 				55F0BE6A1E7090FF00174BD2 /* Student */,
+				558B6D421E71FAC000705882 /* Courses */,
 				551818541E672E4E001B7CC7 /* AppDelegate.h */,
 				551818551E672E4E001B7CC7 /* AppDelegate.m */,
 				5518185A1E672E4E001B7CC7 /* Main.storyboard */,
-				552EF75C1E6C7E48007CE1E5 /* SKDataManager.h */,
-				552EF75D1E6C7E48007CE1E5 /* SKDataManager.m */,
-				55F0BE6B1E70915000174BD2 /* SKCoreDataViewController.h */,
-				55F0BE6C1E70915000174BD2 /* SKCoreDataViewController.m */,
 				551818601E672E4F001B7CC7 /* Assets.xcassets */,
 				551818621E672E4F001B7CC7 /* LaunchScreen.storyboard */,
 				551818651E672E4F001B7CC7 /* Info.plist */,
@@ -125,9 +146,49 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		558B6D421E71FAC000705882 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				558B6D491E7414B600705882 /* Cells */,
+				558B6D3C1E71FA8900705882 /* SKCoursesInfoViewController.h */,
+				558B6D3D1E71FA8900705882 /* SKCoursesInfoViewController.m */,
+				558B6D3F1E71FAB200705882 /* SKCoursesViewController.h */,
+				558B6D401E71FAB200705882 /* SKCoursesViewController.m */,
+				558B6D511E741A5A00705882 /* SKSpheresViewController.h */,
+				558B6D521E741A5A00705882 /* SKSpheresViewController.m */,
+			);
+			name = Courses;
+			sourceTree = "<group>";
+		};
+		558B6D491E7414B600705882 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				558B6D461E740C2100705882 /* SKCourseInfoCell.h */,
+				558B6D471E740C2100705882 /* SKCourseInfoCell.m */,
+				558B6D431E71FBF300705882 /* SKCourseCell.h */,
+				558B6D441E71FBF300705882 /* SKCourseCell.m */,
+				558B6D4B1E7418E600705882 /* SKCourseSphereCell.h */,
+				558B6D4C1E7418E600705882 /* SKCourseSphereCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		558B6D4A1E7414E300705882 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				552EF75C1E6C7E48007CE1E5 /* SKDataManager.h */,
+				552EF75D1E6C7E48007CE1E5 /* SKDataManager.m */,
+				55F0BE6B1E70915000174BD2 /* SKCoreDataViewController.h */,
+				55F0BE6C1E70915000174BD2 /* SKCoreDataViewController.m */,
+			);
+			name = "Core Data";
+			path = CoreDataHomeWork;
+			sourceTree = "<group>";
+		};
 		55F0BE6A1E7090FF00174BD2 /* Student */ = {
 			isa = PBXGroup;
 			children = (
+				551818771E673882001B7CC7 /* Cells */,
 				5518187B1E67784A001B7CC7 /* SKStudentsViewController.h */,
 				5518187C1E67784A001B7CC7 /* SKStudentsViewController.m */,
 				5518186E1E672FBD001B7CC7 /* SKStudentInfoViewController.h */,
@@ -139,14 +200,18 @@
 		55F0BE921E70A9F700174BD2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				558B6D361E71F9A600705882 /* SKStudent+CoreDataClass.h */,
+				558B6D371E71F9A600705882 /* SKStudent+CoreDataClass.m */,
+				558B6D381E71F9A600705882 /* SKStudent+CoreDataProperties.h */,
+				558B6D391E71F9A600705882 /* SKStudent+CoreDataProperties.m */,
 				55F0BE8C1E709C9600174BD2 /* SKObject+CoreDataClass.h */,
 				55F0BE8D1E709C9600174BD2 /* SKObject+CoreDataClass.m */,
 				55F0BE8E1E709C9600174BD2 /* SKObject+CoreDataProperties.h */,
 				55F0BE8F1E709C9600174BD2 /* SKObject+CoreDataProperties.m */,
-				55F0BE861E709C6000174BD2 /* SKStudent+CoreDataClass.h */,
-				55F0BE871E709C6000174BD2 /* SKStudent+CoreDataClass.m */,
-				55F0BE881E709C6000174BD2 /* SKStudent+CoreDataProperties.h */,
-				55F0BE891E709C6000174BD2 /* SKStudent+CoreDataProperties.m */,
+				558B6D2F1E71F93700705882 /* SKCourse+CoreDataClass.h */,
+				558B6D301E71F93700705882 /* SKCourse+CoreDataClass.m */,
+				558B6D311E71F93700705882 /* SKCourse+CoreDataProperties.h */,
+				558B6D321E71F93700705882 /* SKCourse+CoreDataProperties.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -224,18 +289,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F0BE911E709C9600174BD2 /* SKObject+CoreDataProperties.m in Sources */,
+				558B6D411E71FAB200705882 /* SKCoursesViewController.m in Sources */,
 				552EF75E1E6C7E48007CE1E5 /* SKDataManager.m in Sources */,
+				558B6D351E71F93700705882 /* SKCourse+CoreDataProperties.m in Sources */,
 				5518187D1E67784A001B7CC7 /* SKStudentsViewController.m in Sources */,
 				551818701E672FBD001B7CC7 /* SKStudentInfoViewController.m in Sources */,
+				558B6D3E1E71FA8900705882 /* SKCoursesInfoViewController.m in Sources */,
 				551818761E673879001B7CC7 /* SKUserCell.m in Sources */,
 				55F0BE901E709C9600174BD2 /* SKObject+CoreDataClass.m in Sources */,
 				5518185F1E672E4E001B7CC7 /* CoreDataHomeWork.xcdatamodeld in Sources */,
+				558B6D481E740C2100705882 /* SKCourseInfoCell.m in Sources */,
+				558B6D341E71F93700705882 /* SKCourse+CoreDataClass.m in Sources */,
 				551818561E672E4E001B7CC7 /* AppDelegate.m in Sources */,
-				55F0BE8B1E709C6000174BD2 /* SKStudent+CoreDataProperties.m in Sources */,
+				558B6D3B1E71F9A600705882 /* SKStudent+CoreDataProperties.m in Sources */,
 				55F0BE6D1E70915000174BD2 /* SKCoreDataViewController.m in Sources */,
+				558B6D451E71FBF300705882 /* SKCourseCell.m in Sources */,
 				551818531E672E4E001B7CC7 /* main.m in Sources */,
+				558B6D4D1E7418E600705882 /* SKCourseSphereCell.m in Sources */,
+				558B6D531E741A5A00705882 /* SKSpheresViewController.m in Sources */,
 				5518187A1E674A2F001B7CC7 /* SKStudentInfoCell.m in Sources */,
-				55F0BE8A1E709C6000174BD2 /* SKStudent+CoreDataClass.m in Sources */,
+				558B6D3A1E71F9A600705882 /* SKStudent+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,15 +1,14 @@
 //
-//  SKStudentsViewController.h
+//  SKCoursesViewController.h
 //  CoreDataHomeWork
 //
-//  Created by Кирилл on 01.03.17.
+//  Created by Кирилл on 10.03.17.
 //  Copyright © 2017 Кирилл. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "SKCoreDataViewController.h"
 
-@interface SKStudentsViewController : SKCoreDataViewController
+@interface SKCoursesViewController : SKCoreDataViewController
 
 @property (strong, nonatomic) NSIndexPath *indexPathForEdit;
 

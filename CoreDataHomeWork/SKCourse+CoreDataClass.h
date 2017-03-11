@@ -1,5 +1,5 @@
 //
-//  SKStudent+CoreDataClass.h
+//  SKCourse+CoreDataClass.h
 //  CoreDataHomeWork
 //
 //  Created by Кирилл on 09.03.17.
@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "SKObject+CoreDataClass.h"
 
-@class SKCourse;
+@class SKStudent;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SKStudent : SKObject
+@interface SKCourse : SKObject
 
 @end
 
 NS_ASSUME_NONNULL_END
 
-#import "SKStudent+CoreDataProperties.h"
+#import "SKCourse+CoreDataProperties.h"

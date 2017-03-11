@@ -2,7 +2,7 @@
 //  SKStudent+CoreDataProperties.h
 //  CoreDataHomeWork
 //
-//  Created by Кирилл on 08.03.17.
+//  Created by Кирилл on 09.03.17.
 //  Copyright © 2017 Кирилл. All rights reserved.
 //
 
@@ -15,9 +15,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<SKStudent *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *name;
-@property (nullable, nonatomic, copy) NSString *lastname;
 @property (nullable, nonatomic, copy) NSString *email;
+@property (nullable, nonatomic, copy) NSString *lastname;
+@property (nullable, nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, retain) NSSet<SKCourse *> *courses;
+
+@end
+
+@interface SKStudent (CoreDataGeneratedAccessors)
+
+- (void)addCoursesObject:(SKCourse *)value;
+- (void)removeCoursesObject:(SKCourse *)value;
+- (void)addCourses:(NSSet<SKCourse *> *)values;
+- (void)removeCourses:(NSSet<SKCourse *> *)values;
 
 @end
 

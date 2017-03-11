@@ -8,8 +8,9 @@
 
 #import "SKCoursesInfoViewController.h"
 #import "SKCourse+CoreDataClass.h"
+#import "SKSpheresViewController.h"
 
-@interface SKCoursesInfoViewController ()
+@interface SKCoursesInfoViewController () <UIPopoverPresentationControllerDelegate, UITextFieldDelegate>
 
 @property (strong, nonatomic) SKCourse *course;
 
@@ -26,6 +27,7 @@ typedef enum {
 static NSString *nameCellIdentifier = @"nameCell";
 static NSString *sphereCellIdentifier = @"sphereCell";
 static NSString *disciplineCellIdentifier = @"disciplineCell";
+static NSString *sphereSegueIdentifier = @"spheres";
 
 @implementation SKCoursesInfoViewController
 
@@ -43,6 +45,29 @@ static NSString *disciplineCellIdentifier = @"disciplineCell";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    
+    if ([textField isEqual:self.sphereCell.sphereTextField]) {
+        [self performSegueWithIdentifier:sphereSegueIdentifier sender:textField];
+        return NO;
+    }
+    return YES;
+}
+
+#pragma mark - UIPopoverPresentationControllerDelegate
+
+- (UIModalPresentationStyle)adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller traitCollection:(UITraitCollection *)traitCollection {
+    return UIModalPresentationNone;
 }
 
 #pragma mark - Table view data source
@@ -87,7 +112,7 @@ static NSString *disciplineCellIdentifier = @"disciplineCell";
             sphereCell = [tableView dequeueReusableCellWithIdentifier:sphereCellIdentifier
                                                    forIndexPath:indexPath];
             if (self.isEdit) {
-                sphereCell.sphereLabel.text = self.course.sphere;
+                sphereCell.sphereTextField.text = self.course.sphere;
             }
             
             self.sphereCell = sphereCell;
@@ -99,6 +124,8 @@ static NSString *disciplineCellIdentifier = @"disciplineCell";
     }
     
 }
+
+#pragma mark - Actions 
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {
     [self.navigationController popViewControllerAnimated:YES];
@@ -114,13 +141,13 @@ static NSString *disciplineCellIdentifier = @"disciplineCell";
         
         course.name = self.nameCell.nameTextField.text;
         course.discipline = self.disciplineCell.disciplineTextField.text;
-        course.sphere = self.sphereCell.sphereLabel.text;
+        course.sphere = self.sphereCell.sphereTextField.text;
         
     } else {
         
         self.course.name = self.nameCell.nameTextField.text;
         self.course.discipline = self.disciplineCell.disciplineTextField.text;
-        self.course.sphere = self.sphereCell.sphereLabel.text;
+        self.course.sphere = self.sphereCell.sphereTextField.text;
     }
     
     // Save the context.
@@ -132,4 +159,26 @@ static NSString *disciplineCellIdentifier = @"disciplineCell";
     
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:sphereSegueIdentifier]) {
+    
+        SKSpheresViewController *vc = [segue destinationViewController];
+        
+        vc.delegate = self.sphereCell;
+        
+        vc.popoverPresentationController.delegate = self;
+        
+        UIPopoverPresentationController *popover = [vc popoverPresentationController];
+        
+        CGRect popoverRect = [sender convertRect:((UITextField *)sender).frame toView:self.tableView];
+        
+        popover.sourceView = self.tableView;
+        popover.sourceRect = popoverRect;
+    }
+}
+
 @end

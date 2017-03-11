@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SKSpheresViewController : UIViewController
+@protocol SKSpheresProtocol <NSObject>
+
+@property (weak, nonatomic) IBOutlet UITextField *sphereTextField;
+@property (assign, nonatomic) NSInteger selectedRow;
+
+@end
+
+@interface SKSpheresViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIPickerView *spherePicker;
+@property (weak, nonatomic) id <SKSpheresProtocol> delegate;
 
 @end

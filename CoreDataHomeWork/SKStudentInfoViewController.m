@@ -101,6 +101,12 @@ static NSString *emailCell = @"emailCell";
     
 }
 
+#pragma mark -
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 #pragma mark - Actions
 
 - (IBAction)cancelAction:(UIBarButtonItem *)sender {

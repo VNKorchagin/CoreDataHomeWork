@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKSpheresViewController.h"
 
-@interface SKCourseSphereCell : UITableViewCell
+@interface SKCourseSphereCell : UITableViewCell <SKSpheresProtocol>
 
-@property (weak, nonatomic) IBOutlet UILabel *sphereLabel;
+@property (assign, nonatomic) NSInteger selectedRow;
+@property (weak, nonatomic) IBOutlet UITextField *sphereTextField;
 
 @end

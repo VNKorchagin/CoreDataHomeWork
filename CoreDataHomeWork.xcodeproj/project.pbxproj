@@ -95,8 +95,6 @@
 		551818451E672E4D001B7CC7 = {
 			isa = PBXGroup;
 			children = (
-				558B6D4A1E7414E300705882 /* Core Data */,
-				55F0BE921E70A9F700174BD2 /* Models */,
 				551818501E672E4E001B7CC7 /* CoreDataHomeWork */,
 				5518184F1E672E4E001B7CC7 /* Products */,
 			);
@@ -113,6 +111,8 @@
 		551818501E672E4E001B7CC7 /* CoreDataHomeWork */ = {
 			isa = PBXGroup;
 			children = (
+				558B6D4A1E7414E300705882 /* Core Data */,
+				55F0BE921E70A9F700174BD2 /* Models */,
 				55F0BE6A1E7090FF00174BD2 /* Student */,
 				558B6D421E71FAC000705882 /* Courses */,
 				551818541E672E4E001B7CC7 /* AppDelegate.h */,
@@ -182,7 +182,6 @@
 				55F0BE6C1E70915000174BD2 /* SKCoreDataViewController.m */,
 			);
 			name = "Core Data";
-			path = CoreDataHomeWork;
 			sourceTree = "<group>";
 		};
 		55F0BE6A1E7090FF00174BD2 /* Student */ = {
@@ -214,6 +213,7 @@
 				558B6D321E71F93700705882 /* SKCourse+CoreDataProperties.m */,
 			);
 			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

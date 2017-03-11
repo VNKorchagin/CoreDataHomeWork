@@ -12,11 +12,19 @@
 
 @end
 
+static NSString *spheres[] = {  @"Computer Science", @"Chemistry", @"Physics", @"Earth sciences",
+    @"Space science", @"Biology", @"Social Science",
+    @"Engineering", @"Healthcare", @"Philosophy", @"History",
+    @"Formal Science", @"Interdisciplinary Science"                 };
+
 @implementation SKSpheresViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    if ([self.delegate.sphereTextField.text length] == 0) {
+        self.delegate.sphereTextField.text = [self pickerView:self.spherePicker titleForRow:0 forComponent:0];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,26 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UIPickerViewDataSource
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return sizeof(spheres) / sizeof(NSString *);
 }
-*/
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+#pragma mark - UIPickerViewDelegate
+
+- (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component  {
+    return spheres[row];
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    self.delegate.sphereTextField.text = [self pickerView:pickerView titleForRow:row forComponent:component];
+    self.delegate.selectedRow = row;
+}
 
 @end

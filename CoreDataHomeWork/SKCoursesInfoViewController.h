@@ -11,8 +11,7 @@
 #import "SKCourseInfoCell.h"
 #import "SKCourseSphereCell.h"
 
-@interface SKCoursesInfoViewController : UITableViewController
-
+@interface SKCoursesInfoViewController : UITableViewController 
 @property (weak, nonatomic) SKCoursesViewController *coursesViewController;
 
 @property (weak, nonatomic) SKCourseInfoCell *nameCell;

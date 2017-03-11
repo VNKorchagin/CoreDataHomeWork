@@ -84,15 +84,6 @@ static NSString *editCourseIdentifier = @"editCourse";
     cell.textLabel.text = [NSString stringWithFormat:@"%@", course.name];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    self.indexPathForEdit = indexPath;
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    [self performSegueWithIdentifier:editCourseIdentifier sender:nil];
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     SKCourseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"courseCell"];
@@ -100,6 +91,17 @@ static NSString *editCourseIdentifier = @"editCourse";
     [self configureCell:cell atIndexPath:indexPath];
     
     return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    self.indexPathForEdit = indexPath;
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self performSegueWithIdentifier:editCourseIdentifier sender:nil];
 }
 
 #pragma mark - Navigation

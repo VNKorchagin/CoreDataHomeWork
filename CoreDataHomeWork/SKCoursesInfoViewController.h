@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SKCoursesViewController.h"
-#import "SKCourseInfoCell.h"
-#import "SKCourseSphereCell.h"
+
+@class SKCoursesViewController;
+@class SKCourseInfoCell;
+@class SKCourseSphereCell;
+@class SKLearningStudentCell;
 
 @interface SKCoursesInfoViewController : UITableViewController 
 @property (weak, nonatomic) SKCoursesViewController *coursesViewController;
@@ -17,6 +19,8 @@
 @property (weak, nonatomic) SKCourseInfoCell *nameCell;
 @property (weak, nonatomic) SKCourseInfoCell *disciplineCell;
 @property (weak, nonatomic) SKCourseSphereCell *sphereCell;
+@property (strong, nonatomic) NSMutableArray<SKLearningStudentCell *> *studentCells;
+
 
 @property (assign, nonatomic) BOOL isEdit;
 
